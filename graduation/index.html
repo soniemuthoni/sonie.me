@@ -4,26 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <title>Damaris Invitation</title>
 </head>
 <body>
-    <style type="style/css">
-    img.bg {
-    min-height: 100%;
-    min-width: 1024px;
-    width: 100%;
-    height: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-@media screen and (max-width: 1024px){
-    img.bg {
-    left: 50%;
-    margin-left: -512px; }
-}
-    </style>
-    <img src="https://res.cloudinary.com/githigi-tech/image/upload/v1569330120/invitation_xzyvtg.png" alt="invite" class="bg"/>
+    <div id="image">
+        <script type="text/javascript">
+            function fadeIn(obj) {
+                $(obj).fadeIn(5000);
+            }   
+        </script>
+            <img id="preload" src="https://res.cloudinary.com/githigi-tech/image/upload/v1569330120/invitation_xzyvtg.png" onload="fadeIn(this)" alt="invite" class="bg" style="display:none;"/>
+    </div>
 </body>
 </html>
